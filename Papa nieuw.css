@@ -1,0 +1,800 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Header Section */
+.header-alert {
+    background-color: #e53e3e;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.header-contact a {
+    color: white;
+}
+
+.header-contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4169E1;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+body {
+  padding-top: 40px; /* Dit is essentieel! */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    color: #2b5cb8;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    max-width: 500px;
+}
+
+.hero-subtitle {
+    color: #6c757d;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-title {
+    color: #2b5cb8;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    font-size: 14px;
+    background-color: #f8f8f8;
+    color: #666;
+    font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+    font-weight: normal;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ccc;
+    background-color: #fff;
+}
+
+.submit-btn,
+.plan-btn {
+    width: 100%;
+    background-color: #e53e3e;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-transform: none;
+}
+
+.submit-btn:hover,
+.plan-btn:hover {
+    background-color: #c53030;
+}
+
+.form-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.benefit-item::before {
+    content: "✓";
+    color: #38a169;
+    font-weight: bold;
+    background-color: #c6f6d5;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Stats Section */
+.stats {
+    background-color: #2b5cb8;
+    color: white;
+    padding: 40px 0;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.stat-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Recent Projects */
+.recent-projects {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.recent-projects .container {
+    display: block;
+    text-align: center;
+}
+
+.recent-projects h2 {
+    color: #2b5cb8;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.project-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    aspect-ratio: 4/4; /* Bredere verhouding voor badkamers */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Voor betere lazy loading ervaring */
+.project-card img[loading="lazy"] {
+    opacity: 0;
+}
+
+.project-card img[loading="lazy"].loaded {
+    opacity: 1;
+}
+.project-label {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: #2b5cb8;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 2;
+}
+/* Guarantees Section */
+.guarantees {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.guarantees .container {
+    display: block;
+    text-align: center;
+}
+
+.guarantees h2 {
+    color: #2b5cb8;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.guarantees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.guarantee-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 2px solid #c6f6d5;
+}
+
+.guarantee-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.guarantee-card h3 {
+    color: #2b5cb8;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.guarantee-card p {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.testimonials .container {
+    display: block;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #2b5cb8;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.stars {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card blockquote {
+    background-color: #c6f6d5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+    border-left: 4px solid #38a169;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-initial {
+    background-color: #2b5cb8;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* Process Section */
+.process {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.process .container {
+    display: block;
+    text-align: center;
+}
+
+.process h2 {
+    color: #2b5cb8;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.process-step {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.step-number {
+    background-color: #2b5cb8;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.process-step h3 {
+    color: #2b5cb8;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.process-step p {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+/* Urgency Section */
+.urgency {
+    background-color: #e53e3e;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.urgency-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.urgency-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.claim-btn {
+    background-color: white;
+    color: #e53e3e;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.claim-btn:hover {
+    background-color: #f1f1f1;
+}
+
+/* Final CTA */
+.final-cta {
+    background-color: #2b5cb8;
+    color: white;
+    padding: 80px 20px;
+}
+
+.final-cta .container {
+    display: block;
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.final-cta p {
+    font-size: 18px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.cta-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.phone-btn {
+    background-color: #38a169;
+    color: white;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.4;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Verwijdert onderstreping */
+    display: block; /* Zorgt dat het de volledige ruimte vult */
+}
+
+.phone-btn:hover {
+    background-color: #2f855a;
+    text-decoration: none; /* Voorkomt onderstreping bij hover */
+}
+
+.cta-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.cta-form input,
+.cta-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.cta-form input::placeholder,
+.cta-form textarea::placeholder {
+    color: #adb5bd;
+}
+
+.plan-btn {
+    width: 100%;
+    background-color: #e53e3e;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.plan-btn:hover {
+    background-color: #c53030;
+}
+
+
+.faq-section {
+    background: #f8f9fa;
+    padding: 60px 20px;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    color: #2c5aa0;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.faq-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.faq-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+    color: #2c5aa0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.faq-icon {
+    float: right;
+}
+
+.faq-answer {
+    display: none;
+    color: #333;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.faq-button {
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px;
+}
+
+.faq-whatsapp {
+    background: #25D366;
+}
+
+.faq-phone {
+    background: #007bff;
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 40px 15px;
+    }
+    
+    .faq-title {
+        font-size: 1.8em;
+    }
+    
+    .faq-item {
+        padding: 20px;
+    }
+    
+    .faq-question {
+        font-size: 1.2em;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Je bestaande mobile CSS */
+    .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    /* HERO GRID LAYOUT - NIEUW */
+    .hero .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        grid-row: 1;
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+        grid-row: 2;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        grid-row: 3;
+        justify-self: center;
+    }
+
+    .form-container {
+        grid-row: 4;
+        margin-top: 0;
+    }
+
+    /* Verberg het originele hero-content wrapper gedrag */
+    .hero-content {
+        display: contents; /* Dit breekt de wrapper op */
+    }
+
+    /* Rest van je bestaande mobile CSS blijft hetzelfde */
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guarantees-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .countdown {
+        font-size: 32px;
+        gap: 15px;
+    }
+
+    .countdown-number {
+        font-size: 32px;
+    }
+
+    .countdown-separator {
+        font-size: 32px;
+    }
+
+   
+
+    .final-benefits {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .recent-projects h2,
+    .guarantees h2,
+    .testimonials h2,
+    .process h2,
+    .final-cta h2 {
+        font-size: 28px;
+    }
+
+    .urgency-content h2 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .recent-projects,
+    .guarantees,
+    .testimonials,
+    .process,
+    .final-cta {
+        padding: 60px 20px;
+    }
+
+    .urgency {
+        padding: 40px 20px;
+    }
+}
